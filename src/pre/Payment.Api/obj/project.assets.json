@@ -1514,6 +1514,7 @@
           "Mapster": "7.4.0",
           "MediatR": "12.2.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Payment.Service": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -1531,6 +1532,42 @@
         },
         "runtime": {
           "bin/placeholder/Payment.Domain.dll": {}
+        }
+      },
+      "Payment.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Payment.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payment.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Persistence.dll": {}
+        }
+      },
+      "Payment.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Payment.Ultils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payment.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Service.dll": {}
+        }
+      },
+      "Payment.Ultils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Payment.Ultils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Ultils.dll": {}
         }
       }
     }
@@ -5107,6 +5144,21 @@
       "type": "project",
       "path": "../../../Payment.Domain/Payment.Domain.csproj",
       "msbuildProject": "../../../Payment.Domain/Payment.Domain.csproj"
+    },
+    "Payment.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../../../../Payment.Persistence/Payment.Persistence.csproj",
+      "msbuildProject": "../../../../Payment.Persistence/Payment.Persistence.csproj"
+    },
+    "Payment.Service/1.0.0": {
+      "type": "project",
+      "path": "../../infras/Payment.Service/Payment.Service.csproj",
+      "msbuildProject": "../../infras/Payment.Service/Payment.Service.csproj"
+    },
+    "Payment.Ultils/1.0.0": {
+      "type": "project",
+      "path": "../../shared/Payment.Ultils/Payment.Ultils.csproj",
+      "msbuildProject": "../../shared/Payment.Ultils/Payment.Ultils.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5114,6 +5166,7 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Payment.Application >= 1.0.0",
       "Payment.Domain >= 1.0.0",
+      "Payment.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -5144,6 +5197,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "D:\\WorkSpace\\.Net\\Project\\Payment.Persistence\\Payment.Persistence.csproj": {
+              "projectPath": "D:\\WorkSpace\\.Net\\Project\\Payment.Persistence\\Payment.Persistence.csproj"
+            },
             "D:\\WorkSpace\\.Net\\Project\\Payment\\Payment.Application\\Payment.Application.csproj": {
               "projectPath": "D:\\WorkSpace\\.Net\\Project\\Payment\\Payment.Application\\Payment.Application.csproj"
             },

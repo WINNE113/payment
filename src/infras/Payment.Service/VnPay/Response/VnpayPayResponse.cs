@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Payment.Application.Features.Payment.Queries
+namespace Payment.Service.VnPay.Response
 {
-    public class GetPayment 
+    public class VnpayPayResponse
     {
 
     }

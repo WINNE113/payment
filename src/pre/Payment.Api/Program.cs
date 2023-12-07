@@ -1,3 +1,8 @@
+using Payment.Api.Services;
+using Payment.Application.Features.Commands;
+using Payment.Application.Interface;
+using Payment.Persistence.Persist;
+using Payment.Service.VnPay.Config;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,6 +31,18 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ISqlService, SqlService>();
+builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
+builder.Services.AddScoped<IConnectionService, ConnectionService>();
+
+builder.Services.AddMediatR(r =>
+{
+    r.RegisterServicesFromAssembly(typeof(CreateMerchant).Assembly);
+});
+
+builder.Services.Configure<VnpayConfig>(
+                builder.Configuration.GetSection(VnpayConfig.ConfigName));
 
 var app = builder.Build();
 

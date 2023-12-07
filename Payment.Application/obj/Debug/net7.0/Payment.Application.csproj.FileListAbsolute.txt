@@ -1,0 +1,17 @@
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Application.deps.json
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Application.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Application.pdb
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.csproj.AssemblyReference.cache
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.AssemblyInfoInputs.cache
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.AssemblyInfo.cs
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.csproj.CoreCompileInputs.cache
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\refint\Payment.Application.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.pdb
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\ref\Payment.Application.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Service.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Service.pdb
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\obj\Debug\net7.0\Payment.Application.csproj.CopyComplete
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Ultils.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Application\bin\Debug\net7.0\Payment.Ultils.pdb

@@ -13,4 +13,8 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\infras\Payment.Service\Payment.Service.csproj" />
+  </ItemGroup>
+
 </Project>

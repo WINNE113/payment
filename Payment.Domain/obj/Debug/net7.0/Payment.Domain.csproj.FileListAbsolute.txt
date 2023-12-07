@@ -1,0 +1,11 @@
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\bin\Debug\net7.0\Payment.Domain.deps.json
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\bin\Debug\net7.0\Payment.Domain.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\bin\Debug\net7.0\Payment.Domain.pdb
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\Payment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\Payment.Domain.AssemblyInfoInputs.cache
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\Payment.Domain.AssemblyInfo.cs
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\Payment.Domain.csproj.CoreCompileInputs.cache
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\Payment.Domain.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\refint\Payment.Domain.dll
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\Payment.Domain.pdb
+D:\WorkSpace\.Net\Project\Payment\Payment.Domain\obj\Debug\net7.0\ref\Payment.Domain.dll

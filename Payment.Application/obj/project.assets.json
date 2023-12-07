@@ -1400,6 +1400,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Payment.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Payment.Ultils": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payment.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Service.dll": {}
+        }
+      },
+      "Payment.Ultils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Payment.Ultils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Ultils.dll": {}
+        }
       }
     }
   },
@@ -4615,6 +4638,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Payment.Service/1.0.0": {
+      "type": "project",
+      "path": "../src/infras/Payment.Service/Payment.Service.csproj",
+      "msbuildProject": "../src/infras/Payment.Service/Payment.Service.csproj"
+    },
+    "Payment.Ultils/1.0.0": {
+      "type": "project",
+      "path": "../src/shared/Payment.Ultils/Payment.Ultils.csproj",
+      "msbuildProject": "../src/shared/Payment.Ultils/Payment.Ultils.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4622,6 +4655,7 @@
       "Mapster >= 7.4.0",
       "MediatR >= 12.2.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
+      "Payment.Service >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -4651,7 +4685,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\WorkSpace\\.Net\\Project\\Payment\\src\\infras\\Payment.Service\\Payment.Service.csproj": {
+              "projectPath": "D:\\WorkSpace\\.Net\\Project\\Payment\\src\\infras\\Payment.Service\\Payment.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
