@@ -1405,6 +1405,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Payment.Ultils": "1.0.0"
         },
         "compile": {

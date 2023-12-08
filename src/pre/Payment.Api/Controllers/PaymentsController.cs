@@ -1,9 +1,14 @@
-﻿using MediatR;
+﻿using Mapster;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Payment.Application.Base.Models;
 using Payment.Application.Features.Commands;
 using Payment.Application.Features.Dtos;
 using Payment.Application.Features.Payment.Commands;
+using Payment.Service.VnPay.Config;
+using Payment.Service.VnPay.Response;
+using Payment.Ultils.Extensions;
 using System.Net;
 
 namespace Payment.Api.Controllers
@@ -13,10 +18,18 @@ namespace Payment.Api.Controllers
     public class PaymentsController : Controller
     {
         private readonly IMediator mediator;
+        private readonly VnpayConfig vnpayConfig;
 
-        public PaymentsController(IMediator mediator)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="mediator"></param>
+        /// <param name="vnpayConfigOptions"></param>
+        public PaymentsController(IMediator mediator,
+            IOptions<VnpayConfig> vnpayConfigOptions)
         {
             this.mediator = mediator;
+            this.vnpayConfig = vnpayConfigOptions.Value;
         }
         /// <summary>
         /// Created payment to get link
@@ -32,6 +45,25 @@ namespace Payment.Api.Controllers
             var response = new BaseResultWithData<PaymentLinkDtos>();
             response = await mediator.Send(request);
             return Ok(response);
+        }
+
+
+        [HttpGet]
+        [Route("vnpay-return")]
+        public async Task<IActionResult> VnpayReturn([FromQuery]VnpayPayResponse response)
+        {
+            string returnUrl = string.Empty;
+            var returnModel = new PaymentReturnDtos();
+            var processResult = await mediator.Send(response.Adapt<ProcessVnpayPaymentReturn>());
+
+            if (processResult.Success) { 
+                returnModel = processResult.Data.Item1 as PaymentReturnDtos;   
+                returnUrl = processResult.Data.Item2 as string; 
+            }
+
+            if(returnUrl.EndsWith("/"))
+                returnUrl = returnUrl.Remove(returnUrl.Length - 1, 1);
+            return Redirect($"{returnUrl}?{returnModel.ToQueryString()}");
         }
 
     }
